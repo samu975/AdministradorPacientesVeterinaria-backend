@@ -6,10 +6,8 @@ const checkAuth = async(req, res, next) => {
     if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
         try {
            token = req.headers.authorization.split(' ')[1]
-           console.log(token)
 
            const decoded = jwt.verify(token, process.env.JWT_SECRET)
-           console.log(decoded)
 
            req.veterinario = await Veterinario.findById(decoded.id).select("-password -token -confirmado");
            return next();

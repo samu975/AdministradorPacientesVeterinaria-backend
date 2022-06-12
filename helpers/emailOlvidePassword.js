@@ -25,8 +25,7 @@ const emailOlvidePassword = async(datos) =>{
         `
     });
 
-    console.log('Mensaje enviado: %s', info.messageId);
-
+    
 }
 
 export default emailOlvidePassword

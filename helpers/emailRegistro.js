@@ -25,7 +25,6 @@ const emailRegistro = async(datos) =>{
         `
     });
 
-    console.log('Mensaje enviado: %s', info.messageId);
 
 }
 

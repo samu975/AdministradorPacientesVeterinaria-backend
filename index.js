@@ -4,7 +4,7 @@ import cors from "cors";
 import conectarDB from "./config/db.js";
 import VeterinarioRoutes from "./routes/veterinarioRoutes.js";
 import pacienteRoutes from "./routes/pacienteRoutes.js";
-
+console.log('Hola vienes a chismosear un poco ? pues te cuento que la funcionalidad de registrarse se desahabilito, asi que si quieres curiosear ingresando los datos correo@correo en mail y 123456 en contraseña')
 const app = express();
 app.use(express.json())
 

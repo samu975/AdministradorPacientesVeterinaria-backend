@@ -12,7 +12,7 @@ dotenv.config();
 
 conectarDB();
 
-const dominiosPermitidos = ['https://fascinating-sopapillas-0dcc82.netlify.app']
+const dominiosPermitidos = ['https://fascinating-sopapillas-0dcc82.netlify.app', 'https://sea-turtle-app-npzvy.ondigitalocean.app', 'https://apvbackend.herokuapp.com/']
 
 const corsOptions = {
     origin: function (origin, callback) {
